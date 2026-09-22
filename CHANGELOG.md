@@ -2,7 +2,7 @@
 
 All notable changes to Designer Report are listed here. Versions follow `MAJOR.MINOR.PATCH`.
 
-## [Unreleased]
+## [1.2.0] - 2026-09-23
 
 ### Added
 - **Project Explorer tabs — Files / Reports.** The Reports tab shows every report with its subreports nested; missing and circular references are marked.
