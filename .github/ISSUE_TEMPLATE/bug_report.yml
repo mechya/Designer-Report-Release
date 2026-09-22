@@ -1,0 +1,61 @@
+name: Bug report / 不具合の報告
+description: Something does not work as expected. / 期待どおりに動作しない
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please remove any private data from files or screenshots you attach.
+        ご報告ありがとうございます。添付するファイルやスクリーンショットから個人情報を削除してください。
+  - type: input
+    id: version
+    attributes:
+      label: App version / バージョン
+      description: Help → About Designer Report
+      placeholder: "1.1.8"
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Installed from / 入手元
+      options:
+        - Microsoft Store
+        - Windows installer (.exe)
+        - macOS (.dmg)
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system / OS
+      placeholder: "Windows 11 23H2 / macOS 15"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 再現手順
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What happened, and what did you expect? / 実際の動作と期待する動作
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console / Errors tab output / コンソール・エラー出力
+      description: Copy from the Report State panel at the bottom of the window.
+      render: text
+  - type: textarea
+    id: files
+    attributes:
+      label: Screenshots or a sample .jrxml / スクリーンショット・サンプル
+      description: Drag files here.

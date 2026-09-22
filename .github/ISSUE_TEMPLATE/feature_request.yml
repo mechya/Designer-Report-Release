@@ -1,0 +1,20 @@
+name: Feature request / 機能の要望
+description: Suggest an idea for Designer Report. / 新しい機能を提案する
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do? / やりたいこと
+      description: Describe the task or problem, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could Designer Report help? / 提案する解決方法
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else? / その他
+      description: Screenshots, examples from other tools, sample reports…

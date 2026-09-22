@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation / ドキュメント
+    url: https://github.com/mechya/Designer-Report-Release/tree/main/docs
+    about: Guides and answers to common questions.
