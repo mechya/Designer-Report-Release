@@ -28,4 +28,4 @@ A font's license decides where you may use it. Check the **License** line in Fon
 
 ## Fonts in compiled reports
 
-**Compile** copies the fonts a report actually uses into `build/`, so the compiled `.jasper` files can be filled on another machine with the same fonts.
+**Compile** copies only the fonts the reports actually use into `build/fonts/`, together with their license files and a matching `jasper-fonts.xml`, so the compiled `.jasper` files can be filled on another machine with the same fonts. Fonts nothing refers to are left out, and a font a report asks for but the workspace does not have is reported in the console.

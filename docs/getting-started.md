@@ -20,7 +20,7 @@ The app creates these folders in the workspace:
 | `fonts/` | Fonts your reports use (see [Fonts](fonts.md)) |
 | `images/` | Images placed in reports |
 | `data/` | Sample data, e.g. JSON files |
-| `build/` | Output of **Compile**: `.jasper` files and the fonts they need |
+| `build/` | Output of **Compile**: `.jasper` files, their sources, and only the fonts and images they need. `build.zip` next to it holds the same content |
 
 ## 3. Create a report
 

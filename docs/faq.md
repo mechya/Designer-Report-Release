@@ -14,7 +14,7 @@ JasperReports **7.x** JRXML. Reports made with Jaspersoft Studio 7 open directly
 
 ### Can I use the reports in my own application?
 
-Yes — they are yours. Use the `.jrxml` files or the compiled `.jasper` files from `build/`, together with the fonts in `build/`. When your application uses subreports, pass `SUBREPORT_DIR` (see [Subreports](subreports.md#paths-and-subreport_dir)).
+Yes — they are yours. Use the `.jrxml` files or the compiled `.jasper` files from `build/` (or `build.zip`), together with the fonts in `build/fonts/`; put the folder on the classpath so JasperReports finds them. When your application uses subreports, pass `SUBREPORT_DIR` (see [Subreports](subreports.md#paths-and-subreport_dir)).
 
 ### Preview says a font is not available
 

@@ -71,7 +71,32 @@ The settings are saved per report (`.json-config` next to the report).
 
 ## Compile (build)
 
-**Compile** in the toolbar compiles every report of the workspace into `build/` as `.jasper` files and copies the fonts they use, ready for use in your own Java applications. **Clean** empties `build/`.
+**Compile** in the toolbar builds the whole workspace into a `build/` folder that you can copy
+anywhere — a server, another computer — and use as it is. It is written fresh on every build, so
+reports you deleted or renamed never linger in it. Previewing a report does not touch `build/`.
+
+`build.zip` is written next to the folder with exactly the same content, for sending it on or
+copying it to a server.
+
+| In `build/` | |
+|---|---|
+| `*.jasper` | the compiled reports, in the same folder structure as the workspace |
+| `*.jrxml` | their sources — subreports are compiled from these at run time |
+| `fonts/` | **only** the fonts the reports actually use, with `jasper-fonts.xml` and the font licenses |
+| `images/` | only the images the reports actually use |
+| `jasperreports_extension.properties` | tells JasperReports where the fonts are |
+| `README.txt` | what the folder contains and how to fill a report from Java |
+
+Reports whose file name still starts with *untitled* are treated as drafts and left out, unless
+another report uses them as a subreport. The console says which ones were skipped and why:
+
+```
+Skipped untitled.jrxml - draft ("untitled" file name, not used by any report)
+```
+
+Give a draft a real name to have it built.
+
+**Clean** removes `build/` and `build.zip`.
 
 ## Fonts
 

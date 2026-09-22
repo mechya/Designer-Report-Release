@@ -26,7 +26,7 @@ No Java installation is needed — the app includes everything it requires.
 - **Visual designer** — drag elements from the palette, move, resize, align and layer them; snap-to-grid, rulers and guide lines.
 - **Source editor** — JRXML with syntax highlighting, kept in sync with the design view.
 - **Preview** — compiles, fills and renders the report page by page.
-- **Build** — compiles every report of a workspace to `.jasper` files, together with the fonts they use, ready for your own applications.
+- **Build** — compiles a workspace into a self-contained `build/` folder (and `build.zip`): `.jasper` files with their sources and only the fonts and images they use, ready to drop into your own application or onto a server.
 - **Elements** — static text, text fields, images, lines, rectangles, ellipses, frames, page breaks, barcodes / QR codes, charts, crosstabs, lists, subreports, and page number / date / time fields.
 - **Subreports made easy** — the *Reports* tab shows each report with its subreports; create, attach, open and delete subreports from the right-click menu.
 - **Fonts** — manage the fonts of a workspace, preview them, and see each font's details (name, version, license).

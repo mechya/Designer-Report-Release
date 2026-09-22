@@ -14,7 +14,15 @@ All notable changes to Designer Report are listed here. Versions follow `MAJOR.M
 - Icons in all menus and context menus; Collapse All / Expand All toggle in the Project Explorer.
 - Help menu: Documentation, Report an Issue, Donate, About Designer Report; Check for Updates uses GitHub Releases.
 
+### Changed
+- **Build output is portable and smaller.** `build/` now holds the compiled reports *and* their `.jrxml` sources in the workspace's folder structure, only the fonts and images the reports actually use (with the font licenses and a matching `jasper-fonts.xml`), and a `README.txt` explaining how to fill a report from Java. The folder can be copied to a server and used as it is.
+- `build.zip` is written next to `build/` with the same content; **Clean** removes both.
+- `build/` is emptied before every build, so deleted or renamed reports no longer linger in the output.
+- Reports still named *untitled…* are skipped unless another report uses them as a subreport; the console says which ones were skipped and why.
+- **Compile** writes the build output; previewing a report no longer does, which makes Preview faster.
+
 ### Fixed
+- Fonts are found regardless of the system language: font families are read from the font files themselves, so a build on an English system no longer ends up with no fonts.
 - Subreports now render their content in the design view again.
 - Elements inside the Detail band are listed in the Outline.
 - Frames, lists and unknown elements (e.g. tables) are no longer removed when a report is edited after reopening.
