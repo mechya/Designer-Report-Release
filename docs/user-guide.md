@@ -80,12 +80,26 @@ copying it to a server.
 
 | In `build/` | |
 |---|---|
-| `*.jasper` | the compiled reports, in the same folder structure as the workspace |
-| `*.jrxml` | their sources — subreports are compiled from these at run time |
+| `jasper/` | the compiled reports — what your application loads, in the same folder structure as the workspace |
 | `fonts/` | **only** the fonts the reports actually use, with `jasper-fonts.xml` and the font licenses |
 | `images/` | only the images the reports actually use |
 | `jasperreports_extension.properties` | tells JasperReports where the fonts are |
 | `README.txt` | what the folder contains and how to fill a report from Java |
+
+No `.jrxml` sources are shipped. A report written in Designer Report compiles its subreports from
+source while it is filled, so the build rewrites each of those references to the compiled `.jasper`
+next to it and says how many it changed:
+
+```
+5 subreport reference(s) now point at the compiled .jasper
+```
+
+Your workspace `.jrxml` files are untouched — only the copies inside the build are rewritten. If a
+reference cannot be rewritten (its target was not built, or the expression is not the generated
+form), that one report's source is shipped alongside so filling still works, and the console says so.
+
+Set `SUBREPORT_DIR` to the folder of the report being filled — `build/jasper/` for a report at the
+top of it.
 
 Reports whose file name still starts with *untitled* are treated as drafts and left out, unless
 another report uses them as a subreport. The console says which ones were skipped and why:

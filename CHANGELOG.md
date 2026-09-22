@@ -15,7 +15,8 @@ All notable changes to Designer Report are listed here. Versions follow `MAJOR.M
 - Help menu: Documentation, Report an Issue, Donate, About Designer Report; Check for Updates uses GitHub Releases.
 
 ### Changed
-- **Build output is portable and smaller.** `build/` now holds the compiled reports *and* their `.jrxml` sources in the workspace's folder structure, only the fonts and images the reports actually use (with the font licenses and a matching `jasper-fonts.xml`), and a `README.txt` explaining how to fill a report from Java. The folder can be copied to a server and used as it is.
+- **Build output is portable and smaller.** `build/` now holds the compiled reports in `jasper/`, keeping the workspace's folder structure, plus only the fonts and images the reports actually use (with the font licenses and a matching `jasper-fonts.xml`) and a `README.txt` explaining how to fill a report from Java. The folder can be copied to a server and used as it is.
+- **No sources in the build.** Subreport references are rewritten to point at the compiled `.jasper` beside them, so nothing is compiled while a report is filled — faster, and no `.jrxml` has to be deployed. References that cannot be rewritten keep their source, and the console says which.
 - `build.zip` is written next to `build/` with the same content; **Clean** removes both.
 - `build/` is emptied before every build, so deleted or renamed reports no longer linger in the output.
 - Reports still named *untitled…* are skipped unless another report uses them as a subreport; the console says which ones were skipped and why.
