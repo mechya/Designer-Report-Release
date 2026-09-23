@@ -2,7 +2,7 @@
 
 ### Is Designer Report free?
 
-Yes, completely. If it is useful to you, you can support development with a [coffee ☕](https://buymeacoffee.com/YOUR_BMC_USERNAME) <!-- DONATE: replace YOUR_BMC_USERNAME -->.
+Yes, completely. If it is useful to you, you can support development with a [coffee ☕](https://buymeacoffee.com/gurungbupesh).
 
 ### Is it made by Jaspersoft?
 
