@@ -16,6 +16,14 @@ Designer Report for Windows 10 / 11 is available in the **Microsoft Store**:
 
 No Java installation is needed — the app includes everything it requires. Updates are installed automatically by the Store.
 
+## Compatibility — JasperReports 7 only
+
+> [!IMPORTANT]
+> Designer Report works with the **JasperReports® 7** JRXML format only.
+>
+> - **Reports made for JasperReports 6 or older** (for example with Jaspersoft® Studio 6.x or iReport) use an older JRXML format and **can't be opened**. Convert them first, for example by opening and saving them in Jaspersoft® Studio 7.
+> - **Compiled `.jasper` files** from Designer Report need **JasperReports Library 7.x** in the application that fills them. They don't run on JasperReports 6.
+
 ## Features
 
 - **New report in seconds** — start from a blank page, from a template (invoice, quotation, delivery note, purchase order, receipt, lists — built in, from your own folder, or from the online [template library](templates/README.md)), or from a description that the AI helper drafts. Check it in a live preview and change it before anything is saved.
@@ -70,6 +78,9 @@ JasperReports® is a registered trademark of Cloud Software Group, Inc. Designer
 - サブレポートの作成・追加・削除（レポートタブ）
 - 日本語フォントの管理とプレビュー、フォント情報の表示
 - 日本語 / 英語 UI、ダーク / ライトテーマ
+
+> [!IMPORTANT]
+> **JasperReports® 7 専用です。** JasperReports 6 以前（Jaspersoft® Studio 6.x や iReport など）で作成した JRXML は形式が異なるため開けません。先に Jaspersoft® Studio 7 で開いて保存するなどして変換してください。Designer Report でビルドした `.jasper` を使うアプリには JasperReports Library 7.x が必要です（JasperReports 6 では動きません）。
 
 ダウンロード：Microsoft Store から入手できます（更新は自動で行われます）。
 

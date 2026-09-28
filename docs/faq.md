@@ -10,7 +10,9 @@ No. Designer Report is an independent project that uses the open-source JasperRe
 
 ### Which JRXML versions are supported?
 
-JasperReports **7.x** JRXML. Reports made with Jaspersoft Studio 7 open directly. Older (6.x) JRXML must be converted to the 7.x format first.
+JasperReports **7.x** JRXML only. Reports made with Jaspersoft Studio 7 open directly. Reports made for JasperReports 6 or older (Jaspersoft Studio 6.x, iReport) use an older format that JasperReports 7 can't read — opening one fails with *Unable to load report*. Convert them first, for example by opening and saving them in Jaspersoft Studio 7.
+
+The compiled `.jasper` files that **Build** writes need **JasperReports Library 7.x** in the application that fills them; they don't run on JasperReports 6.
 
 ### Can I use the reports in my own application?
 
