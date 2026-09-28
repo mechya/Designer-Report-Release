@@ -37,4 +37,4 @@ Designer Report is developed by one person in spare time. Issues are read and an
 
 ## Support development
 
-Designer Report is free. If it saves you time, you can support its development with a [coffee ☕](https://buymeacoffee.com/gurungbupesh).
+Designer Report is free. If it saves you time, you can support its development with a [coffee ☕](https://buymeacoffee.com/gurung.bhupesh).

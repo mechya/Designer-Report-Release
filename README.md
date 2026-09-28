@@ -4,7 +4,7 @@
 
 Design reports on a visual canvas, edit the JRXML source side by side, and preview the filled report page by page, with full support for Japanese fonts and layouts.
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/gurungbupesh)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/gurung.bhupesh)
 
 ---
 
@@ -46,7 +46,7 @@ See the **[User Guide](docs/user-guide.md)** for everything the app can do.
 
 Found a bug or have an idea? See **[Support](SUPPORT.md)** — or open an [issue](https://github.com/mechya/Designer-Report-Release/issues/new/choose).
 
-If Designer Report is useful to you, you can support its development with a **[coffee ☕](https://buymeacoffee.com/gurungbupesh)**. It is always free to use.
+If Designer Report is useful to you, you can support its development with a **[coffee ☕](https://buymeacoffee.com/gurung.bhupesh)**. It is always free to use.
 
 ## License
 
@@ -69,7 +69,7 @@ JasperReports® is a registered trademark of Cloud Software Group, Inc. Designer
 
 ダウンロード：Microsoft Store（準備中）または [Releases](https://github.com/mechya/Designer-Report-Release/releases/latest)。
 不具合の報告・要望は [Issues](https://github.com/mechya/Designer-Report-Release/issues/new/choose) へ。
-開発を応援していただける方は [Buy Me a Coffee](https://buymeacoffee.com/gurungbupesh) からどうぞ。
+開発を応援していただける方は [Buy Me a Coffee](https://buymeacoffee.com/gurung.bhupesh) からどうぞ。
 
 ---
 
