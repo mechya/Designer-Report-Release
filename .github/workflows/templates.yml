@@ -1,0 +1,38 @@
+name: Templates
+
+# Pull requests: check the templates. Pushes to main: check them and rebuild templates/index.json,
+# the catalog Designer Report downloads.
+on:
+  pull_request:
+    paths: ["templates/**"]
+  push:
+    branches: [main]
+    paths: ["templates/**", "!templates/index.json"]
+
+permissions:
+  contents: write
+
+jobs:
+  templates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check templates
+        if: github.event_name == 'pull_request'
+        run: python templates/build_index.py --check
+
+      - name: Rebuild the index
+        if: github.event_name == 'push'
+        run: |
+          python templates/build_index.py
+          if ! git diff --quiet -- templates/index.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add templates/index.json
+            git commit -m "Rebuild the template index"
+            git push
+          fi

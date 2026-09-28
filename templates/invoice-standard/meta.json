@@ -1,0 +1,12 @@
+{
+  "title" : {
+    "ja" : "請求書（標準）",
+    "en" : "Invoice (standard)"
+  },
+  "category" : "billing",
+  "tags" : [ "請求書", "invoice", "bill", "明細", "合計" ],
+  "description" : {
+    "ja" : "ロゴ、請求先、明細（品名・数量・単価・金額）と合計のある請求書。",
+    "en" : "Invoice with logo, customer, item lines (item, qty, unit price, amount) and a total."
+  }
+}
