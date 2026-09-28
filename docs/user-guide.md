@@ -18,6 +18,63 @@
 - Toolbar: **Collapse All / Expand All** and **Refresh**.
 - Right-click a report for **New Subreport…**, **Attach Existing Subreport…**, **Rename**, **Delete**, **Copy Path** and **Show in Explorer / Finder**. See [Subreports](subreports.md).
 
+## Creating a report
+
+**File → New…** (also the **New** toolbar button and the Project Explorer) opens the New Report wizard. Step 1 asks how to start:
+
+| Start from | Step 2 |
+|---|---|
+| **Blank** | A file name and the paper (A4 or Letter, portrait or landscape). **Create** makes an empty report and opens it. |
+| **Template** | A gallery of templates with pictures of their first page — see [Templates](#templates). |
+| **Create with AI** | Describe the report in your own words (for example *"Invoice with logo, customer name and address, items with qty, unit price and amount, total at the bottom"*) and click **Draft with AI**. The AI helper runs on this PC and takes about half a minute. |
+
+Templates made by the app and AI drafts open in an editor before anything is saved:
+
+- The **layout table** lists the title, the fields at the top, the table columns (with a sum where it makes sense) and the notes below the table. Change labels, field names, types and places, add or remove rows, reorder them, and choose the logo (none, a placeholder, or a picture file).
+- The **preview** on the right shows the first page with sample data and updates as you edit. If the report could not be printed (a font file that PDF export can't read, for example), the reason is shown here.
+- **Ask the AI for changes** under the preview: type what to change (*"Remove the number, add a year and a month column"*, *"remove the logo"*) and click **Change with AI**. The history lists every request and what it changed; **Undo** puts the last change back. Double-click a request to ask it again.
+- **Create** saves the report and opens it in the designer. **Create and Test** also runs the [template test](#template-test).
+
+A placeholder logo is saved as `images/logo.png`. Select it in the designer and click **Replace…** in Properties to put in the real picture; **Build** warns while a placeholder is still in use.
+
+## Templates
+
+The Template step lists templates from three places. Search matches titles, tags and descriptions in any language; the list next to the search box shows one place only.
+
+| Source | What it is |
+|---|---|
+| **Built-in** | Invoice, quotation, delivery note, purchase order, receipt and customer list. They open in the editor, with labels in the language you choose. |
+| **My Templates** | JRXML files in your templates folder — by default `templates/` in the workspace. |
+| **Online** | The [template library](../templates/README.md) in this repository. Off until you tick **Show online templates**: it is the only part of New that connects to the internet. The list is kept on the PC, so it is still shown when you are offline. |
+
+**Versions.** A template can have several versions. The newest is offered; choose an older one in the **Version** list, which also shows what changed. A report made from a template remembers which one and which version it came from.
+
+**Save as Template.** Open a report and choose **File → Save as Template…**: give it a name, title, category and search words, and it appears under My Templates with a picture of its first page. Saving again under the same name adds the next version (1.0.0 → 1.1.0) with a note on what changed; earlier versions stay.
+
+**Your own folder layout** (the same as the online library, so a template can be copied between them):
+
+```
+templates/
+  my-invoice/
+    meta.json                  title, category, tags, description
+    1.0.0/template.jrxml
+    1.0.0/thumbnail.png        optional
+    1.1.0/...
+  quick-form.jrxml             a single file works too
+```
+
+**Template locations** (on the Template step) shows both places and lets you change them: the **My Templates folder** — any folder, for example one your team shares — and the **online library link**. A GitHub page link such as `https://github.com/owner/repo/tree/main/templates` can be pasted as it is. **Build** skips the templates folder.
+
+## Template test
+
+**Tools → Test Template** (Ctrl+Shift+T, or the **Test** button) fills the open report with sample data in four cases — empty, short, just fits and too long — in the languages you choose, saves a PDF of each to `test-results/`, and lists text that is cut off, fonts that shrink, boxes that grow, the word "null" printed for empty fields, and page counts. Picture fields get sample pictures. With the AI helper set up, the sample text is realistic; without it, built-in text is used.
+
+## AI helper
+
+The AI helper is optional. It is a free AI model (Google Gemma 3 or Meta Llama 3.2, about 0.8 GB) that is downloaded once and then runs on this PC, offline — what you type never leaves your computer. It writes sample text for the template test and drafts and changes templates in the New Report wizard.
+
+**Tools → AI Helper…** (or the **AI** button in the wizard) lists the models: which one is in use, which are on the PC and how much space they take. **Use this** switches (a model that isn't on the PC is downloaded first; the download can be paused and continues after a lost connection), **Delete** frees the space, and **Advanced** uses a model of your own (a GGUF file or link). The models folder can be changed.
+
 ## Designing
 
 - **Add** — drag an element from the **Palette** onto a band.
@@ -118,7 +175,7 @@ Give a draft a real name to have it built.
 
 ## Preferences
 
-**Window → Preferences**: theme (Light, Dark, Auto) and language (English, 日本語).
+**Window → Preferences**: theme (Light, Dark, Auto) and language (English, 日本語), and the AI helper.
 
 ## Help menu
 
@@ -127,7 +184,6 @@ Give a draft a real name to have it built.
 | Documentation | Opens this documentation. |
 | Report an Issue | Opens the issue form on GitHub. |
 | Donate | Supports development via Buy Me a Coffee. |
-| Check for Updates… | Checks GitHub for a newer version (installer versions; the Store updates its version itself). |
 | About Designer Report | Version, copyright and licenses. |
 
 ## Keyboard shortcuts
@@ -141,6 +197,7 @@ Give a draft a real name to have it built.
 | Delete | Delete selected element(s) |
 | Ctrl+F | Find in Source |
 | Ctrl+Shift+F | Format Source |
+| Ctrl+Shift+T | Test Template |
 | Ctrl + mouse wheel | Zoom |
 | Esc | Cancel the current action |
 

@@ -2,6 +2,43 @@
 
 All notable changes to Designer Report are listed here. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [1.3.0] - 2026-09-28
+
+### Added
+- **New Report wizard.** File → New (and the toolbar and Project Explorer) now asks how to start: **Blank** (paper size and orientation), **Template** or **Create with AI**. Templates and AI drafts open in an editor with a live preview of the first page; nothing is saved until **Create** or **Create and Test**.
+- **Create with AI.** Describe the report and the offline AI helper drafts a layout — title, fields at the top, table columns with sums, notes. Ask for changes in plain words ("remove the number, add a year and a month column", "remove the logo"); every request is kept in a history with Undo. The app lays out the page itself, so the JRXML is always valid.
+- **Templates.** Six built-in templates (invoice, quotation, delivery note, purchase order, receipt, customer list) with labels in Japanese, English and other languages; **My Templates** from a folder of your own (by default the workspace `templates/`, or a shared folder); and an optional **online library** in this repository, off until you switch it on. Search in any language and filter by source.
+- **Template versions.** A template can have several versions; the newest is offered and older ones stay selectable with what changed. Reports remember the template and version they came from.
+- **File → Save as Template…** saves the open report as a template with a picture of its first page; saving again under the same name adds a new version.
+- **Template test** (Tools → Test Template, Ctrl+Shift+T): fills the report with sample data in four cases (empty, short, just fits, too long) in the languages you choose, saves a PDF of each, and lists cut-off text, shrinking fonts, growing boxes, "null" printed for empty fields and page counts. Picture fields get sample pictures.
+- **AI helper** (optional, offline): a free model (Google Gemma 3 or Meta Llama 3.2) downloaded once, used for realistic test text and for drafting templates. **Tools → AI Helper…** shows which models are installed and in use, switches between them, and deletes them to free space.
+- Placeholder logos: a drawn stand-in saved as `images/logo.png`, replaced with **Replace…** in Properties; **Build** warns while one is still in use.
+
+### Changed
+- Build skips the templates folder.
+- Deleting an image element keeps the picture file when another report still uses it.
+
+### Fixed
+- Pictures from the workspace `images/` folder failed to preview and test on Windows (the path was written with backslashes into a Java string).
+- A `.ttf` that is really a font collection (a `.ttc` copied to a `.ttf` name, such as `BIZ-UDGOTHICR.TTF`) no longer breaks PDF export: a real single font of the family is preferred, and a collection is embedded from the `.ttc` beside it. Test errors name the font file and what to do.
+- The Japanese input (IME) candidate box opens under the cursor on scaled displays.
+- `run.bat` found Maven's Unix script instead of `mvn.cmd` and failed to start the app.
+
+## [1.2.3] - 2026-09-25
+
+### Fixed
+- The main window no longer opens with its title bar above the screen on displays with 125–150 % scaling: its size is capped to the screen, and it opens centred or maximized.
+
+## [1.2.2] - 2026-09-25
+
+### Removed
+- **Check for Updates.** The Microsoft Store version crashed at startup because of it; the Store installs updates itself.
+
+## [1.2.1] - 2026-09-24
+
+### Fixed
+- With Windows *Controlled folder access* on, the app explains that the workspace folder in Documents is blocked, and offers Windows Security or another folder, instead of failing to start.
+
 ## [1.2.0] - 2026-09-23
 
 ### Added
