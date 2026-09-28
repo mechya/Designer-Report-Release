@@ -34,8 +34,7 @@ Crosstab groups cannot group empty (null) values. Make sure the bucket expressio
 
 ### How do I update?
 
-- **Microsoft Store** — the Store updates the app automatically.
-- **Installer** — **Help → Check for Updates…**, or download the latest version from [Releases](https://github.com/mechya/Designer-Report-Release/releases/latest). Your workspaces and settings are kept.
+The Microsoft Store updates the app automatically. Your workspaces and settings are kept.
 
 ### Where are my settings stored?
 

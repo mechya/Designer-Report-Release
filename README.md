@@ -1,6 +1,6 @@
 # Designer Report
 
-**A free, lightweight visual designer for JasperReports® 7 reports (JRXML) — for Windows and macOS.**
+**A free, lightweight visual designer for JasperReports® 7 reports (JRXML) — for Windows.**
 
 Design reports on a visual canvas, edit the JRXML source side by side, and preview the filled report page by page, with full support for Japanese fonts and layouts.
 
@@ -10,22 +10,22 @@ Design reports on a visual canvas, edit the JRXML source side by side, and previ
 
 ## Download
 
-| Platform | Where |
-|---|---|
-| **Windows 10 / 11** | Microsoft Store *(coming soon)* — or the `.exe` installer from [Releases](https://github.com/mechya/Designer-Report-Release/releases/latest) |
-| **macOS** | The `.dmg` from [Releases](https://github.com/mechya/Designer-Report-Release/releases/latest) |
+Designer Report for Windows 10 / 11 is available in the **Microsoft Store**:
 
-No Java installation is needed — the app includes everything it requires.
+<a href="https://apps.microsoft.com/detail/9N6XX87LGVS6"><img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" width="200"></a>
 
-- **Microsoft Store version**: updates are installed automatically by the Store.
-- **Installer versions**: use **Help → Check for Updates…** in the app.
+No Java installation is needed — the app includes everything it requires. Updates are installed automatically by the Store.
 
 ## Features
 
+- **New report in seconds** — start from a blank page, from a template (invoice, quotation, delivery note, purchase order, receipt, lists — built in, from your own folder, or from the online [template library](templates/README.md)), or from a description that the AI helper drafts. Check it in a live preview and change it before anything is saved.
+- **Templates with versions** — keep your own templates in a folder (a shared team folder works too) and save any report as a template; every version stays available.
+- **Template test** — fills a report with sample data in four cases (empty, short, just fits, too long) and shows cut-off text, growing boxes, missing fonts and "null" at a glance, with a PDF of each.
+- **AI helper (optional, offline)** — a free AI model downloaded once that runs on your PC: realistic test text, template drafts and changes in plain words. Nothing you type leaves your computer.
 - **Visual designer** — drag elements from the palette, move, resize, align and layer them; snap-to-grid, rulers and guide lines.
 - **Source editor** — JRXML with syntax highlighting, kept in sync with the design view.
 - **Preview** — compiles, fills and renders the report page by page.
-- **Build** — compiles a workspace into a self-contained `build/` folder (and `build.zip`): `.jasper` files with their sources and only the fonts and images they use, ready to drop into your own application or onto a server.
+- **Build** — compiles a workspace into a self-contained `build/` folder (and `build.zip`): the compiled `.jasper` files and only the fonts and images they use, ready to drop into your own application or onto a server.
 - **Elements** — static text, text fields, images, lines, rectangles, ellipses, frames, page breaks, barcodes / QR codes, charts, crosstabs, lists, subreports, and page number / date / time fields.
 - **Subreports made easy** — the *Reports* tab shows each report with its subreports; create, attach, open and delete subreports from the right-click menu.
 - **Fonts** — manage the fonts of a workspace, preview them, and see each font's details (name, version, license).
@@ -60,14 +60,20 @@ JasperReports® is a registered trademark of Cloud Software Group, Inc. Designer
 
 ## 日本語
 
-**Designer Report** は、JasperReports® 7（JRXML）用の無料・軽量なビジュアル帳票デザイナーです（Windows / macOS）。
+**Designer Report** は、JasperReports® 7（JRXML）用の無料・軽量なビジュアル帳票デザイナーです（Windows）。
 
+- 新規作成ウィザード：空白、テンプレート（請求書・見積書・納品書・注文書・領収書・一覧、自分のフォルダーやオンラインのライブラリも）、またはAIによる下書きから作成。保存前にプレビューで確認・変更できます
+- バージョン管理付きのテンプレート（チームの共有フォルダーにも対応）、「テンプレートとして保存」
+- テンプレートのテスト：サンプルデータで文字の切れ・枠の伸び・フォント不足を確認し、PDF を出力
+- AIヘルパー（任意・オフライン）：PC上で動く無料のAIモデル。入力した内容はPCの外に送られません
 - キャンバスでのレイアウト編集、JRXML ソース編集、プレビュー、.jasper へのビルド
 - サブレポートの作成・追加・削除（レポートタブ）
 - 日本語フォントの管理とプレビュー、フォント情報の表示
 - 日本語 / 英語 UI、ダーク / ライトテーマ
 
-ダウンロード：Microsoft Store（準備中）または [Releases](https://github.com/mechya/Designer-Report-Release/releases/latest)。
+ダウンロード：Microsoft Store から入手できます（更新は自動で行われます）。
+
+<a href="https://apps.microsoft.com/detail/9N6XX87LGVS6?hl=ja-jp"><img src="https://get.microsoft.com/images/ja-jp%20dark.svg" alt="Microsoft から入手" width="200"></a>
 不具合の報告・要望は [Issues](https://github.com/mechya/Designer-Report-Release/issues/new/choose) へ。
 開発を応援していただける方は [Buy Me a Coffee](https://buymeacoffee.com/gurung.bhupesh) からどうぞ。
 

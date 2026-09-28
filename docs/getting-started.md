@@ -2,8 +2,7 @@
 
 ## 1. Install
 
-- **Windows** — install from the Microsoft Store *(coming soon)*, or download the `.exe` installer from [Releases](https://github.com/mechya/Designer-Report-Release/releases/latest) and run it.
-- **macOS** — download the `.dmg` from [Releases](https://github.com/mechya/Designer-Report-Release/releases/latest), open it and drag **Designer Report** to *Applications*.
+Install **Designer Report** from the [Microsoft Store](https://apps.microsoft.com/detail/9N6XX87LGVS6) (Windows 10 / 11).
 
 No separate Java installation is needed.
 
