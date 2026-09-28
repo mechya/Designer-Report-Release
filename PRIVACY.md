@@ -1,6 +1,6 @@
 # Privacy Policy
 
-*Last updated: September 22, 2026*
+*Last updated: September 28, 2026*
 
 Designer Report ("the app") is a desktop application made by Gurung Bhupesh. This policy explains what the app does — and does not do — with your information.
 
@@ -16,7 +16,8 @@ Reports, data sources, fonts, images and settings are stored only in the folders
 
 The app works fully offline. It connects to the internet only in these cases:
 
-- **Check for Updates** (installer versions only, not the Microsoft Store version) — the app asks GitHub (`api.github.com`) for the latest release of Designer Report and, if you choose to update, downloads the installer from GitHub. No personal information is sent; GitHub receives the usual technical request information (such as your IP address), as described in the [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
+- **AI helper setup** (optional, only when you choose to set it up) — the app downloads a free AI model once from Hugging Face (`huggingface.co`) and checks it against its published checksum. After that the AI helper runs entirely on your computer: descriptions you type and the sample text it writes never leave your computer. Hugging Face receives the usual technical request information (such as your IP address), as described in the [Hugging Face Privacy Policy](https://huggingface.co/privacy).
+- **Online templates** (optional, off until you switch on *Show online templates* under *File > New > Template*) — the app downloads the template list and the templates you open from this repository on GitHub (`raw.githubusercontent.com`). Nothing is uploaded: your reports, your own templates and your search words stay on your computer. GitHub receives the usual technical request information (such as your IP address), as described in the [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 - **Links you click** — *Documentation*, *Report an Issue* and *Donate* open pages in your web browser (GitHub, Buy Me a Coffee). Those sites have their own privacy policies.
 
 Data sources you configure yourself (for example a JSON file) are read from the location you specify.

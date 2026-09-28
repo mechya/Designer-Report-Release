@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "templates": [
+    {
+      "id": "invoice-standard",
+      "title": {
+        "ja": "請求書（標準）",
+        "en": "Invoice (standard)"
+      },
+      "category": "billing",
+      "tags": [
+        "請求書",
+        "invoice",
+        "bill",
+        "明細",
+        "合計"
+      ],
+      "description": {
+        "ja": "ロゴ、請求先、明細（品名・数量・単価・金額）と合計のある請求書。",
+        "en": "Invoice with logo, customer, item lines (item, qty, unit price, amount) and a total."
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "file": "invoice-standard/1.1.0/template.jrxml",
+          "sha256": "b52acfa998d11e077563e6958dbf3e95362912a78a89e6c739305ffa8989821b",
+          "thumbnail": "invoice-standard/1.1.0/thumbnail.png",
+          "thumbnailSha256": "c0a2612f0f0041c1c60794a0587d105ea34351d281f7af8538268476e78deabf",
+          "updated": "2026-09-28",
+          "changes": {
+            "ja": "税率の列を追加",
+            "en": "Added a tax rate column"
+          }
+        },
+        {
+          "version": "1.0.0",
+          "file": "invoice-standard/1.0.0/template.jrxml",
+          "sha256": "73fa4e3958fd37e6eee5aca8e3ee78057123c71518bd621a5d32f0a6a0bea36c",
+          "thumbnail": "invoice-standard/1.0.0/thumbnail.png",
+          "thumbnailSha256": "c15d0629899e7f14e00291a5a18ecf2441d29da12b867a0efc340c2fbb1c4d49",
+          "updated": "2026-09-28",
+          "changes": {
+            "ja": "最初のバージョン",
+            "en": "First version"
+          }
+        }
+      ]
+    }
+  ]
+}
