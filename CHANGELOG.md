@@ -2,6 +2,23 @@
 
 All notable changes to Designer Report are listed here. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [1.4.0] - 2026-09-30
+
+### Added
+- **PDF viewer.** PDFs in the workspace (test results, exports) open in a Studio tab: all pages, zoom, page buttons, and **Open in PDF app**. The file is not locked while open, and the tab shows the new PDF after a test runs again.
+- **Template test: Full page and Next page.** Two new cases fill the first page exactly, and one row more so the report runs onto a second page, to check page breaks. The number of rows is found automatically.
+- **Project Explorer:** folders can be deleted (for example old `test-results`), files have **Open**, and double-clicking a file the Studio can't show opens it in its Windows app.
+
+### Changed
+- The **Test** button always opens the test wizard on its first page, filled in with the last settings. **Tools → Test Settings** and the button's dropdown are gone.
+- JSON files: the Table / Source tabs look like the report editor's, so the open one is clear.
+
+### Fixed
+- The source view marked valid JRXML as an error ("No matching opening tag") when a line held several tags, such as `<element …><expression>…</expression></element>`.
+- Opening a JSON file with rows crashed the outline.
+- Hindi, Nepali and other scripts where one letter is several characters were cut mid-letter in the "just fits", "too long" and "short" tests; AI text with broken vowel signs is no longer used.
+- Folder **Copy Path** and **Show in Explorer** used the workspace instead of the folder.
+
 ## [1.3.0] - 2026-09-28
 
 ### Added
