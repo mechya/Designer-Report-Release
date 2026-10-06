@@ -2,6 +2,22 @@
 
 All notable changes to Designer Report are listed here. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [1.5.0] - 2026-10-05
+
+### Added
+- **Find and Change** (Edit menu, and the design's right-click menu). Lists the elements of the open report, and optionally its subreports, by type, text or expression, name and font size — frames' contents included. The list filters and sorts like a spreadsheet and copies to Excel. Change the font, size, style and alignment of text, colors and size of any element, lines and borders, and image scaling for every ticked element at once; each report changes in one undo step.
+- **Select on canvas.** The elements ticked in Find and Change are selected on the design and in the Outline as you tick them; clicking a row scrolls the design to it.
+- **Element names.** Give an element a name (its JRXML `key`) in Properties; the Outline shows it and Find and Change searches it.
+- **A color for each element type.** Text, fields, images, lines, shapes, frames, subreports, barcodes, lists, charts, crosstabs, page breaks and notes each have their own selection color on the design; page number, date, time, percentage and "page X of Y" fields have theirs too. The palette icons, the Outline icons and Find and Change use the same colors.
+- A loading tab appears at once when a report is opened from the Project Explorer.
+
+### Changed
+- A page break shows that it is selected (it used to show nothing).
+
+### Fixed
+- Folding or unfolding a node in the Outline cleared the selection on the design.
+- With two monitors at different scaling, the window kept the other monitor's size when moved back.
+
 ## [1.4.0] - 2026-09-30
 
 ### Added
