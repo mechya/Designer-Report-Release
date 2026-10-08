@@ -2,6 +2,23 @@
 
 All notable changes to Designer Report are listed here. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [1.6.0] - 2026-10-07
+
+### Added
+- **Drag to select.** Drag from an empty spot on the page (or the grey area around it) to select every element in the box. A frame's elements are picked when the box lies inside the frame.
+- **Select Elements Inside** (right-click). Lists what lies within the selection: the elements of a frame, and elements on top of the selected one, such as text on an image. Pick one, or all of them.
+- **Bring Forward / Send Backward** (right-click). Moves the selected elements one step up or down, past the next element they overlap. All four order commands also work on a frame's elements picked in the Outline.
+- **Template test: Copies.** Each test PDF can hold the filled report several times, as when printing several copies. The results show "× N copies", and the page viewer steps through every copy.
+- **Template test: blank pages.** A case that produces an empty page says so — usually empty space at the bottom of a band (often the Summary) carried onto a new page.
+
+### Changed
+- The **Next page** test fills page 1 with item rows and puts three more on page 2, so the second page's header and rows can be checked. Before, it could push only the Summary onto page 2.
+- Reports open faster: the source view is highlighted in one pass, in the background. The loading tab shows a spinner.
+- Right-clicking a selected element keeps the whole selection for the menu.
+
+### Fixed
+- The **Next page** test could count an empty second page as the page break.
+
 ## [1.5.0] - 2026-10-05
 
 ### Added
