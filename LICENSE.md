@@ -2,7 +2,7 @@
 
 Copyright © 2026 Gurung Bhupesh. All rights reserved.
 
-This license applies to the Designer Report application ("the Software") as distributed through the Microsoft Store and through the Releases of this repository. By installing or using the Software you agree to these terms.
+This license applies to the Designer Report application ("the Software") as distributed through the Microsoft Store, the Mac App Store and the Releases of this repository. By installing or using the Software you agree to these terms.
 
 ## 1. Free to use
 
@@ -17,7 +17,7 @@ Reports, templates, data and other files you create with the Software are yours.
 You may not:
 
 - sell, rent, lease or sub-license the Software, or distribute it as part of another product;
-- redistribute the Software yourself — please link to this repository or to the Microsoft Store instead;
+- redistribute the Software yourself — please link to this repository, the Microsoft Store or the Mac App Store instead;
 - remove or change the copyright notices, this license or the third-party notices;
 - reverse engineer, decompile or disassemble the Software, except where the law or the license of an included open-source component expressly allows it.
 
@@ -31,7 +31,7 @@ The Software includes open-source components. Each component is licensed under i
 
 ## 6. Updates
 
-The author may release updates or stop developing the Software at any time. The Microsoft Store version is updated through the Store; installer versions can check for updates from this repository.
+The author may release updates or stop developing the Software at any time. The Microsoft Store and Mac App Store versions are updated through their store; installer versions can check for updates from this repository.
 
 ## 7. No warranty
 

@@ -2,6 +2,20 @@
 
 All notable changes to Designer Report are listed here. Versions follow `MAJOR.MINOR.PATCH`.
 
+## [1.6.2] - 2026-10-08
+
+### Added
+- **Mac App Store version.** Runs in the macOS App Sandbox: choose the workspace with **Browse…**, and the app opens it again after a restart. The same applies to the My Templates folder and the AI helper's models folder. Needs macOS 12 or later on a Mac with Apple silicon.
+- A sharper Mac app icon (1024 px).
+
+### Fixed
+- **Preview** failed on date fields with *Unable to get value for JSON field … of class java.util.Date*, so the built-in Invoice, Quotation, Delivery Note and Purchase Order templates could not be previewed with JSON data. Dates in JSON are read as `yyyy-MM-dd`, as in the template test.
+
+### Removed
+- The status bar message *Edge browser engine is not setup. HTML Preview will not work fine* — the app has no HTML preview.
+
+(1.6.1 was a Mac App Store test build; its changes are included here.)
+
 ## [1.6.0] - 2026-10-07
 
 ### Added

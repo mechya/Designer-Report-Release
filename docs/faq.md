@@ -36,7 +36,13 @@ Crosstab groups cannot group empty (null) values. Make sure the bucket expressio
 
 ### How do I update?
 
-The Microsoft Store updates the app automatically. Your workspaces and settings are kept.
+The Microsoft Store and the Mac App Store update the app automatically. Your workspaces and settings are kept.
+
+### Mac App Store version: why can't I type the workspace path?
+
+The Mac App Store version runs in the macOS App Sandbox, which lets an app open only the folders you pick yourself. Click **Browse…** and choose (or create) the workspace folder; the app remembers it and opens it directly next time. The same goes for a My Templates folder or AI models folder somewhere else on your Mac.
+
+Files you open from outside the workspace (a JSON data file or an image in another folder, for example) can be used until you quit the app. To have them work every time, keep them inside the workspace — in `data/` and `images/`.
 
 ### Where are my settings stored?
 

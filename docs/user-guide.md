@@ -183,7 +183,7 @@ Give a draft a real name to have it built.
 |---|---|
 | Documentation | Opens this documentation. |
 | Report an Issue | Opens the issue form on GitHub. |
-| Donate | Supports development via Buy Me a Coffee. |
+| Donate | Supports development via Buy Me a Coffee. (Not in the Mac App Store version.) |
 | About Designer Report | Version, copyright and licenses. |
 
 ## Keyboard shortcuts

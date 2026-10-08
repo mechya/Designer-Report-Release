@@ -17,7 +17,7 @@ Most questions are answered in the documentation:
 
 Helpful details:
 
-- the app version (**Help → About Designer Report**) and where you installed it from (Microsoft Store or installer);
+- the app version (**Help → About Designer Report**) and where you installed it from (Microsoft Store, Mac App Store or installer);
 - Windows or macOS version;
 - the steps to reproduce the problem, and what you expected instead;
 - the messages in the **Console** and **Errors** tabs at the bottom of the window;
