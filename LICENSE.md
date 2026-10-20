@@ -8,6 +8,8 @@ This license applies to the Designer Report application ("the Software") as dist
 
 You may install and use the Software free of charge, on any number of your own computers, for personal, educational and commercial purposes.
 
+Some optional features ("Designer Report Pro") are unlocked by an add-on sold separately in the Microsoft Store or the Mac App Store. The purchase is made under that store's terms; once bought, the Pro features may be used under this license like the rest of the Software. You may not unlock them in any other way.
+
 ## 2. Your reports belong to you
 
 Reports, templates, data and other files you create with the Software are yours. You may use, sell and distribute them without restriction. The Software does not claim any rights over them.

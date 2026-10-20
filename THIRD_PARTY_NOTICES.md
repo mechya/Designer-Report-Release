@@ -40,10 +40,24 @@ The libraries are included **unmodified**, as separate JAR files. Their source c
 | StAX2 API | 4.2.2 | BSD-2-Clause | <https://github.com/FasterXML/stax2-api> |
 | Apache Commons BeanUtils | 1.9.4 | Apache-2.0 | <https://commons.apache.org/proper/commons-beanutils/> |
 | Apache Commons Collections | 3.2.2, 4.4 | Apache-2.0 | <https://commons.apache.org/proper/commons-collections/> |
-| Apache Commons IO | 2.11.0 | Apache-2.0 | <https://commons.apache.org/proper/commons-io/> |
+| Apache Commons IO | 2.18.0 | Apache-2.0 | <https://commons.apache.org/proper/commons-io/> |
 | Apache Commons Logging | 1.3.0 | Apache-2.0 | <https://commons.apache.org/proper/commons-logging/> |
 | Byte Buddy | 1.14.9 | Apache-2.0 | <https://github.com/raphw/byte-buddy> |
 | ANTLR | 2.7.7 | ANTLR 2 License (public domain) | <https://www.antlr2.org> |
+
+## Excel import
+
+| Component | Version | License | Source |
+|---|---|---|---|
+| Apache POI (poi, poi-ooxml, poi-ooxml-lite) | 5.4.1 | Apache-2.0 | <https://poi.apache.org> |
+| Apache XMLBeans | 5.3.0 | Apache-2.0 | <https://xmlbeans.apache.org> |
+| Apache Commons Codec | 1.18.0 | Apache-2.0 | <https://commons.apache.org/proper/commons-codec/> |
+| Apache Commons Compress | 1.27.1 | Apache-2.0 | <https://commons.apache.org/proper/commons-compress/> |
+| Apache Commons Lang | 3.16.0 | Apache-2.0 | <https://commons.apache.org/proper/commons-lang/> |
+| Apache Commons Math | 3.6.1 | Apache-2.0 | <https://commons.apache.org/proper/commons-math/> |
+| SparseBitSet | 1.3 | Apache-2.0 | <https://github.com/brettwooldridge/SparseBitSet> |
+| curvesapi | 1.08 | BSD-3-Clause | <https://github.com/virtuald/curvesapi> |
+| Apache Log4j API, Log4j to JUL bridge | 2.24.3 | Apache-2.0 | <https://logging.apache.org/log4j/2.x/> |
 
 ## Runtime
 

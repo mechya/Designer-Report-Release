@@ -26,6 +26,7 @@ No Java installation is needed — the app includes everything it requires. Upda
 
 ## Features
 
+- **Import from Excel** *(Pro)* — turn an Excel form (`.xls`, `.xlsx`) into reports, one per sheet, laid out like the printed sheet: lines, merged cells, fonts and pictures. Cells written `**Name` become fields, and an item table becomes the report's detail rows.
 - **New report in seconds** — start from a blank page, from a template (invoice, quotation, delivery note, purchase order, receipt, lists — built in, from your own folder, or from the online [template library](templates/README.md)), or from a description that the AI helper drafts. Check it in a live preview and change it before anything is saved.
 - **Templates with versions** — keep your own templates in a folder (a shared team folder works too) and save any report as a template; every version stays available.
 - **Template test** — fills a report with sample data in four cases (empty, short, just fits, too long) and shows cut-off text, growing boxes, missing fonts and "null" at a glance, with a PDF of each.
@@ -34,6 +35,7 @@ No Java installation is needed — the app includes everything it requires. Upda
 - **Source editor** — JRXML with syntax highlighting, kept in sync with the design view.
 - **Preview** — compiles, fills and renders the report page by page.
 - **Build** — compiles a workspace into a self-contained `build/` folder (and `build.zip`): the compiled `.jasper` files and only the fonts and images they use, ready to drop into your own application or onto a server.
+- **Edit many at once** — select with a box, Shift+click or Ctrl+click; set Excel-style borders (outline, inside) on the whole selection; change fonts, colors, sizes and borders of every matching element with **Find and Change**.
 - **Elements** — static text, text fields, images, lines, rectangles, ellipses, frames, page breaks, barcodes / QR codes, charts, crosstabs, lists, subreports, and page number / date / time fields.
 - **Subreports made easy** — the *Reports* tab shows each report with its subreports; create, attach, open and delete subreports from the right-click menu.
 - **Fonts** — manage the fonts of a workspace, preview them, and see each font's details (name, version, license).
@@ -41,6 +43,10 @@ No Java installation is needed — the app includes everything it requires. Upda
 - **Japanese and English** user interface, **dark and light** themes.
 
 See the **[User Guide](docs/user-guide.md)** for everything the app can do.
+
+## Designer Report Pro
+
+Designer Report is free to use. **Designer Report Pro** is an optional add-on, bought once in the Microsoft Store from inside the app, that unlocks the Pro features — today **Import from Excel**, and the ones added later. See [Pro](docs/user-guide.md#designer-report-pro) in the user guide.
 
 ## Documentation
 
@@ -54,11 +60,11 @@ See the **[User Guide](docs/user-guide.md)** for everything the app can do.
 
 Found a bug or have an idea? See **[Support](SUPPORT.md)** — or open an [issue](https://github.com/mechya/Designer-Report-Release/issues/new/choose).
 
-If Designer Report is useful to you, you can support its development with a **[coffee ☕](https://buymeacoffee.com/gurung.bhupesh)**. It is always free to use.
+If Designer Report is useful to you, you can support its development with a **[coffee ☕](https://buymeacoffee.com/gurung.bhupesh)** or with Designer Report Pro.
 
 ## License
 
-Designer Report is **free to use** and is provided under the [Designer Report License](LICENSE.md). It is not open source.
+Designer Report is **free to use** (Designer Report Pro is an optional paid add-on) and is provided under the [Designer Report License](LICENSE.md). It is not open source.
 
 It includes open-source software, listed with their licenses in [Third-Party Notices](THIRD_PARTY_NOTICES.md). See also the [Privacy Policy](PRIVACY.md).
 
@@ -70,6 +76,7 @@ JasperReports® is a registered trademark of Cloud Software Group, Inc. Designer
 
 **Designer Report** は、JasperReports® 7（JRXML）用の無料・軽量なビジュアル帳票デザイナーです（Windows）。
 
+- Excelから取り込み（Pro）：Excelの帳票（.xls、.xlsx）を、印刷したシートと同じレイアウトのレポートに変換。罫線・結合セル・フォント・画像も。「**項目名」のセルはフィールドに、明細の表は明細行になります
 - 新規作成ウィザード：空白、テンプレート（請求書・見積書・納品書・注文書・領収書・一覧、自分のフォルダーやオンラインのライブラリも）、またはAIによる下書きから作成。保存前にプレビューで確認・変更できます
 - バージョン管理付きのテンプレート（チームの共有フォルダーにも対応）、「テンプレートとして保存」
 - テンプレートのテスト：サンプルデータで文字の切れ・枠の伸び・フォント不足を確認し、PDF を出力
@@ -77,7 +84,10 @@ JasperReports® is a registered trademark of Cloud Software Group, Inc. Designer
 - キャンバスでのレイアウト編集、JRXML ソース編集、プレビュー、.jasper へのビルド
 - サブレポートの作成・追加・削除（レポートタブ）
 - 日本語フォントの管理とプレビュー、フォント情報の表示
+- 複数選択（範囲ドラッグ・Shift／Ctrl+クリック）、Excelのような罫線設定（外枠・内側）、「検索と一括変更」でまとめて変更
 - 日本語 / 英語 UI、ダーク / ライトテーマ
+
+**Designer Report Pro**：アプリ内から Microsoft Store で一度購入するだけの追加機能（アドオン）です。現在は「Excelから取り込み」が対象で、今後追加される Pro 機能も使えます。それ以外の機能はすべて無料です。
 
 > [!IMPORTANT]
 > **JasperReports® 7 専用です。** JasperReports 6 以前（Jaspersoft® Studio 6.x や iReport など）で作成した JRXML は形式が異なるため開けません。先に Jaspersoft® Studio 7 で開いて保存するなどして変換してください。Designer Report でビルドした `.jasper` を使うアプリには JasperReports Library 7.x が必要です（JasperReports 6 では動きません）。
