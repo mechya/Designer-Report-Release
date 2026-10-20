@@ -34,7 +34,3 @@ If you find a security problem, please do not describe it publicly in an issue. 
 ## Response times
 
 Designer Report is developed by one person in spare time. Issues are read and answered as soon as possible, but there is no guaranteed response time.
-
-## Support development
-
-Designer Report is free. If it saves you time, you can support its development with a [coffee ☕](https://buymeacoffee.com/gurung.bhupesh), or with [Designer Report Pro](docs/user-guide.md#designer-report-pro).

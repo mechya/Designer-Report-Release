@@ -1,6 +1,6 @@
 # Privacy Policy
 
-*Last updated: October 19, 2026*
+*Last updated: October 20, 2026*
 
 Designer Report ("the app") is a desktop application made by Gurung Bhupesh. This policy explains what the app does — and does not do — with your information.
 
@@ -20,22 +20,13 @@ The app works fully offline. It connects to the internet only in these cases:
 
 - **AI helper setup** (optional, only when you choose to set it up) — the app downloads a free AI model once from Hugging Face (`huggingface.co`) and checks it against its published checksum. After that the AI helper runs entirely on your computer: descriptions you type and the sample text it writes never leave your computer. Hugging Face receives the usual technical request information (such as your IP address), as described in the [Hugging Face Privacy Policy](https://huggingface.co/privacy).
 - **Online templates** (optional, off until you switch on *Show online templates* under *File > New > Template*) — the app downloads the template list and the templates you open from this repository on GitHub (`raw.githubusercontent.com`). Nothing is uploaded: your reports, your own templates and your search words stay on your computer. GitHub receives the usual technical request information (such as your IP address), as described in the [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
-- **Designer Report Pro** (optional paid add-on) — to find out whether Pro is unlocked, the app asks the store you installed it from (Microsoft Store or Mac App Store) whether your store account owns the add-on. The answer is only "owned" or "not owned"; the app does not send your reports, files or any other data.
-- **Links you click** — *Documentation*, *Report an Issue* and *Donate* open pages in your web browser (GitHub, Buy Me a Coffee). Those sites have their own privacy policies. The Mac App Store version has no *Donate* link.
+- **Links you click** — *Documentation* and *Report an Issue* open pages on GitHub in your web browser. GitHub has its own privacy policy.
 
 Data sources you configure yourself (for example a JSON file) are read from the location you specify.
 
 ## Microsoft Store and Mac App Store
 
 If you install the app from the Microsoft Store, Microsoft may collect information about the installation as described in the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). If you install it from the Mac App Store, Apple may do the same as described in [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). The app itself does not receive that information.
-
-## Designer Report Pro
-
-Designer Report Pro is an optional one-time purchase that unlocks extra features. It is sold only as an add-on in the Microsoft Store or the Mac App Store, and the purchase is handled entirely by Microsoft or Apple under their privacy policies linked above. The app never sees your name, email address or payment details, and it does not keep a license key or account of its own: it only asks the store whether the add-on is owned.
-
-## Donations
-
-Donations are handled entirely by Buy Me a Coffee. The app never sees your payment details.
 
 ## Children
 

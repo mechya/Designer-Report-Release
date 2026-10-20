@@ -27,7 +27,6 @@
 |---|---|
 | **Blank** | A file name and the paper (A4 or Letter, portrait or landscape). **Create** makes an empty report and opens it. |
 | **Template** | A gallery of templates with pictures of their first page — see [Templates](#templates). |
-| **Import from Excel** *(Pro)* | An Excel form becomes reports, one per sheet — see [Import from Excel](#import-from-excel). |
 | **Create with AI** | Describe the report in your own words (for example *"Invoice with logo, customer name and address, items with qty, unit price and amount, total at the bottom"*) and click **Draft with AI**. The AI helper runs on this PC and takes about half a minute. |
 
 Templates made by the app and AI drafts open in an editor before anything is saved:
@@ -38,24 +37,6 @@ Templates made by the app and AI drafts open in an editor before anything is sav
 - **Create** saves the report and opens it in the designer. **Create and Test** also runs the [template test](#template-test).
 
 A placeholder logo is saved as `images/logo.png`. Select it in the designer and click **Replace…** in Properties to put in the real picture; **Build** warns while a placeholder is still in use.
-
-## Import from Excel
-
-**New → Import from Excel** turns an Excel form into reports. It suits forms that were made in Excel to be printed: invoices, slips, order sheets.
-
-1. **Choose…** an `.xls` or `.xlsx` file. Its sheets are listed with their kind (*Form* or *List*), the number of fields and the file name each report gets — change the name if you like.
-2. Tick the sheets to import. Click a sheet to see its first page in the **preview**, filled with sample values.
-3. **Create** writes one report per ticked sheet and opens the first one. Pictures are saved in `images/` (the same picture used on several sheets is saved once).
-
-What is copied: the print area, paper size, orientation, margins and scale (including *fit to page*), header and footer, column widths and row heights, merged cells, ruled lines (joined into long lines), cell fills, fonts, sizes, bold/italic/underline, colors, alignment (including *center across selection* and *distributed*), shrink to fit, and pictures.
-
-**Fields.** A cell written `**Name` (or `$F{Name}`) becomes the field *Name*; everything else is fixed text.
-
-**Item tables.** When the sheet has a table whose rows are one per record (an invoice's items, for example), those rows become the report's detail band: the part above becomes the page header, the totals below become the column footer, so the items print within one page. The importer finds such a table itself; to set it by hand, tick **Repeat rows for each record** and give the first and last row. A sheet without fields in its rows stays a form.
-
-**Not copied exactly** lists what the importer could not reproduce on that sheet: fonts that were replaced, formulas (printed with the value saved in the file), drawings and shapes, vertical text, conditional formatting, extra print areas, printed grid lines, and sheets shrunk further to fit the paper.
-
-Import from Excel is a [Pro](#designer-report-pro) feature in the Microsoft Store version: choosing the file and the preview are free, **Create** asks for Pro.
 
 ## Templates
 
@@ -205,19 +186,7 @@ Give a draft a real name to have it built.
 |---|---|
 | Documentation | Opens this documentation. |
 | Report an Issue | Opens the issue form on GitHub. |
-| Donate | Supports development via Buy Me a Coffee. (Not in the Mac App Store version.) |
 | About Designer Report | Version, copyright and licenses. |
-
-## Designer Report Pro
-
-Designer Report is free. **Designer Report Pro** is an optional add-on that unlocks the Pro features, today **[Import from Excel](#import-from-excel)**, and the Pro features added later.
-
-- **Buy** — use a Pro feature and click **Buy Pro**: the Microsoft Store's purchase window opens. It is a one-time purchase, tied to your Microsoft account.
-- **Other PCs** — sign in to the Microsoft Store with the same account; Pro is unlocked there too.
-- **Offline** — once bought, Pro keeps working; the app checks with the Store again when it can.
-- **Privacy** — the app only asks the Store whether the add-on is owned. See the [Privacy Policy](../PRIVACY.md).
-
-In the Mac App Store version, Import from Excel is currently included without the add-on.
 
 ## Keyboard shortcuts
 

@@ -5,8 +5,6 @@ All notable changes to Designer Report are listed here. Versions follow `MAJOR.M
 ## [1.7.0] - 2026-10-20
 
 ### Added
-- **Import from Excel** (New → Import from Excel). Turns an Excel form (`.xls` or `.xlsx`) into reports, one per sheet, laid out like the printed sheet: print area, paper, margins and scale, merged cells, ruled lines, fills, fonts, alignment and pictures. Cells written `**Name` (or `$F{Name}`) become fields. Rows that repeat for each record (an item table) become the report's detail band, so an invoice prints its items on one page. Preview a sheet before anything is saved; the list shows what could not be copied exactly. A **Designer Report Pro** feature: the preview is free.
-- **Designer Report Pro** — an optional add-on, bought once in the Microsoft Store, that unlocks the Pro features, including those added later. Everything else stays free.
 - **Excel-style borders.** The Borders section in Properties has presets (None, Outline, Inside), a preview to click edges on, and line styles, as in Excel's Format Cells. With several elements selected, Outline and Inside treat them as one block.
 - **Selected elements** in Properties. With two or more elements selected, they are listed with a tick each; untick one to take it out of the selection. Lines and shapes, which have no box border, are marked. **Open in Find and Change** lists exactly the selection there.
 - **Borders in Find and Change.** The same borders editor, for every ticked element, applied with **Change**.

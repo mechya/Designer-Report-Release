@@ -2,11 +2,7 @@
 
 ### Is Designer Report free?
 
-Yes. Everything is free except the Pro features (today: Import from Excel), which come with **Designer Report Pro**, an optional add-on bought once in the Microsoft Store. If the app is useful to you, you can also support development with a [coffee ☕](https://buymeacoffee.com/gurung.bhupesh).
-
-### I bought Pro, but the app still asks for it
-
-Make sure you are signed in to the Microsoft Store with the account that bought it, and online, then use the Pro feature again. On a new PC, sign in to the Store with the same account first.
+Yes, completely.
 
 ### Is it made by Jaspersoft?
 
